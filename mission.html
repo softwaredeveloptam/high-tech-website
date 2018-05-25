@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hi-Tech Cuts Mission Statement</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tajawal" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navigation-bar">
+          <img class="logo" src="logo2.png">
+          <a href="./aboutus.html">  ABOUT US  </a>
+          <a href="./services.html">  SERVICES  </a>
+          <a href="./mission.html">  MISSION STATEMENT  </a>
+          <a href="./recentwork.html">  RECENT WORK  </a>
+          <a href="./homepage.html">  HOME  </a>
+        </nav>
+
+       <br>
+
+       <!-- Slideshow container -->
+        <div class="slideshow-container">
+              
+        <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+              <img src="img15.jpg" style="width:100%">
+            <div class="text">THE MISSION</div>
+          </div>
+        </div>
+        
+        <br>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+        // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+          }    
+        </script>
+
+      <div class="MissionMiddleText">
+          <h1 style="text-decoration: underline; color: red;"> MISSION STATEMENT</h1>
+
+          <p>We're here to make life better for you. We only want the best for our customers to look and feel great. <br>
+          First impressions are the most important thing whenever you meet a stranger or close friend. <br>
+          <br>
+          They let people know how you're doing and how you're feeling. It's the first moment people really recognize you and<br>
+          the first thing they remember about you. Don't let that first impression go to waste. We're here to support you and<br>
+          create new bonds and friendships.</p>
+
+      </div>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hi-Tech Cuts Recent Work</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tajawal" rel="stylesheet">
+    </head>
+
+    <body>
+
+    	<nav class="navigation-bar">
+          <img class="logo" src="logo2.png">
+          <a href="./aboutus.html">  ABOUT US  </a>
+          <a href="./services.html">  SERVICES  </a>
+          <a href="./mission.html">  MISSION STATEMENT  </a>
+          <a href="./recentwork.html">  RECENT WORK  </a>
+          <a href="./homepage.html">  HOME  </a>
+      </nav>
+
+      <br>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+            
+      <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext" style="color: black;">1 / 4</div>
+            <img src="img7.jpg" style="width:100%">
+          <div class="text">JON SNOW from Game Of Thrones Apr 2018</div>
+        </div>
+            
+        <div class="mySlides fade">
+           <div class="numbertext" style="color: black;">2 / 4</div>
+             <img src="img8.jpg" style="width:100%">
+           <div class="text">MIGOS at Coachella Apr 2018</div>
+        </div>
+            
+        <div class="mySlides fade">
+           <div class="numbertext">3 / 4</div>
+             <img src="img9.jpg" style="width:100%">
+           <div class="text">KINGSLAYER from Game Of Thrones Mar 2018</div>
+        </div>
+
+        <div class="mySlides fade">
+           <div class="numbertext">4 / 4</div>
+             <img src="img10.jpg" style="width:100%">
+           <div class="text">ERIK KILLMONGER in Black Panther 2017</div>
+        </div>
+      </div>
+      
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1} 
+          slides[slideIndex-1].style.display = "block"; 
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+  </script>
+
+        <br>
+      
+        <div class="RecentWorkMiddleText">
+        <h1 style="color: red; text-decoration: underline;">RECENT WORK</h1>
+        	<p>Leslie has recently been invited to style all the characters on the set of Game of Thrones for Season 6 and 7</p>
+
+        <h2>Celebrity Endorsements</h2>
+        	<p>Leslie has done hair for numerous celebrities for their movie music videos, photo shoots, and interviews.<br> 
+            Her past celebrity clients include: Justin Bieber, The Weeknd, Migos, Brad Pitt, and many more.<br></p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hi-Tech Cuts! Edgy Smart Cuts for you and your family!</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tajawal" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+      
+      <nav class="navigation-bar">
+          <img class="logo" src="logo2.png">
+          <a href="./aboutus.html">  ABOUT US  </a>
+          <a href="./services.html">  SERVICES  </a>
+          <a href="./mission.html">  MISSION STATEMENT  </a>
+          <a href="./recentwork.html">  RECENT WORK  </a>
+          <a href="./homepage.html">  HOME  </a>
+      </nav>
+
+      <br>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+            
+      <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext" style="color: black;">1 / 4</div>
+            <img src="img2.jpg" style="width:100%">
+          <div class="text">THE HOCKEY CUT</div>
+        </div>
+            
+        <div class="mySlides fade">
+           <div class="numbertext">2 / 4</div>
+             <img src="img3.jpg" style="width:100%">
+           <div class="text">CHRIS HEMSWORTH</div>
+        </div>
+            
+        <div class="mySlides fade">
+           <div class="numbertext" style="color: black;">3 / 4</div>
+             <img src="img4.jpg" style="width:100%">
+           <div class="text">THE ELVIS CUT</div>
+        </div>
+
+        <div class="mySlides fade">
+           <div class="numbertext">4 / 4</div>
+             <img src="img1.jpg" style="width:100%">
+           <div class="text">DAVID BECKHAM</div>
+        </div>
+      </div>
+      
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1} 
+          slides[slideIndex-1].style.display = "block"; 
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+  </script>
+
+
+          <div class="homepage-grid">
+               <br>
+            <div id="left-block">
+               <br>
+            <form action="/action_page.php">
+                <div class="container-left">
+                  <h4 style="text-align: center;">
+                  10% off Coupon your first cut!<br>
+                  Get all the latest deals and hair tips weekly!<br><br>
+                  Sign up below!
+                  </h4>
+                </div>
+
+                <div class="container-left" style="background-color:white">
+                  <input type="text" placeholder="Name" name="name" required>
+                  <input type="text" placeholder="Email address" name="mail" required>
+                </div>
+
+                <div class="container-left">
+                  <input type="submit" value="Subscribe">
+                </div>
+            </form>
+            </div>
+
+                <div id="right-block">
+                  <br>
+                  <h3>Address: 1111 E Artesia Blvd, Compton, CA 90221<br>
+                  Phone: (323) 914-2561<br>
+                  E-mail: Jillian@hitechcuts.com<br>
+                  Working Day/Hours: Mon-Sun: 9:30 am to 7:30 pm<br>
+                  </h3>
+                  <h4 style="color: red;">Check us out on Social Media!</h4>
+                  <!-- Add font awesome icons -->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </div>
+
+                <div class="HomePageMiddleText" style="text-align: center;">
+
+                  <h1>HI-TECH CUTS BY JILLIAN</h1>
+                  <p>Hi-Tech Cuts by Jillian provides you professionals for every type of service.<br> 
+                     Jillian promises you satisfaction every single time.<br>
+                     Our talented team's vast amount of knowledge <br> 
+                     pertaining to hair as well as their creativity is limitless.<br>
+                  </p>
+
+                </div>
+
+         </div>
+    </body>
+</html>
+
+

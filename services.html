@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hi-Tech Cuts Services</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tajawal" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navigation-bar">
+          <img class="logo" src="logo2.png">
+          <a href="./aboutus.html">  ABOUT US  </a>
+          <a href="./services.html">  SERVICES  </a>
+          <a href="./mission.html">  MISSION STATEMENT  </a>
+          <a href="./recentwork.html">  RECENT WORK  </a>
+          <a href="./homepage.html">  HOME  </a>
+      </nav>
+
+        <br>
+
+       <!-- Slideshow container -->
+        <div class="slideshow-container">
+              
+        <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+              <img src="img5.jpg" style="width:100%">
+            <div class="text">THE MVP EXPERIENCE</div>
+          </div>
+        </div>
+        
+        <br>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+        // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+          }    
+        </script>
+
+          <div class="ServicesMiddleText" style="text-align: center;">
+              <h1 style="text-decoration: underline; color: red;">THE MVP EXPERIENCE</h1>
+                <br>
+                <h2>Precision Haircut</h2>
+                  <p>Consultation and a Precision Haircut by a Hi-Tech Cut Specialist</p>
+                <br>
+                <h2>Legendary Hot Steamed Towel</h2>
+                  <p>The Legendary Hot Steamed Towel Wrap</p>
+                <br>
+                <h2>Massaging Shampoo</h2>
+                  <p>Tea Tree Shampoo and Leave-In Conditioner</p>
+                <br>
+                <h2>Relaxing Treatment</h2>
+                  <p>Relaxing Neck and Shoulder Treatment Leaves you Refreshed</p>
+          </div>
+
+    </body>
+</html>

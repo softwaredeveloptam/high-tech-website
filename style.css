@@ -1,0 +1,262 @@
+* {box-sizing:border-box}
+
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 75px; /* change it to desired width */
+    background-color: white; /* change to desired color */
+    border-bottom: medium solid black;
+    font-family: 'Tajawal', sans-serif;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 425px;
+    height: 55px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+    float: right;
+    color: black;
+    text-decoration: none;
+    padding: 1px 7.5px;
+}
+
+.navigation-bar > a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+}
+
+.homepage-grid {
+    display: inline;
+    max-width: 1050px;
+    grid-template-areas: 'Lcontent Rcontent'
+    grid-template-columns: 25% 500px;
+    grid-template-rows: 300px;
+    grid-gap: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.container-left {
+    grid-area: Rcontent;
+    padding: 5px;
+    background-color: #f1f1f1;
+    font-family: 'Tajawal', sans-serif;
+    color: #2B547E;
+}
+
+#left-block {
+    float: left;
+}
+
+.HomePageMiddleText {
+    font-family: 'Tajawal', sans-serif;
+    border-top: solid black;
+}
+
+.ServicesMiddleText {
+    font-family: 'Tajawal', sans-serif;
+    border-top: solid black;
+    line-height: 0.75;
+}
+
+.RecentWorkMiddleText {
+    font-family: 'Tajawal', sans-serif;
+    border-top: solid black;
+    line-height: 1;
+    text-align: center;
+}
+
+.AboutUsMiddleText {
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+}
+
+.MissionMiddleText{
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    border-top: solid black;
+    list-style-type: none;
+}
+
+#right-block {
+    float: right;
+    font-family: 'Tajawal', sans-serif;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #2B547E;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.MissionCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
